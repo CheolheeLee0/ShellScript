@@ -236,3 +236,17 @@ fi
  
 # 한줄로 작성
 if [ ${num1} -lt ${num2} ]; then echo "yes"; fi
+
+num1=35
+num2=48
+ 
+# 이중 소괄호를 쓰면 조건문을 문자 대신 기호로 표현 가능하다. 단, 소괄호 안에 따옴표 쓰면 안된다.
+if (( ${num1} < ${num2} )); then
+    echo "yes"
+fi
+ 
+if (( ($num1 * $num2) - $num2 > 200 )); then
+	echo ">200"
+else
+	echo "<200"
+fi
