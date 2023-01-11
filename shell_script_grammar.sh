@@ -209,3 +209,30 @@ fi
 # 값1 -le 값2 : 값1이 값2보다 작거나 같음(less or equal)
 # 값1 -gt 값2 : 값1이 값2보다 큼(greater than)
 # 값1 -ge 값2 : 값1이 값2보다 크거나 같음(greater or equal)
+
+if [ ${a} -eq ${b} ]; then
+    echo "a와 b는 같다."
+fi
+ 
+if [ ${a} -ne ${b} ]; then
+    echo "a와 b는 같지 않다."
+fi
+ 
+if [ ${a} -gt ${b} ]; then
+    echo "a가 b보다 크다."
+fi
+ 
+if [ ${a} -ge ${b} ]; then
+    echo "a가 b보다 크거나 같다."
+fi
+ 
+if [ ${a} -lt ${b} ]; then
+    echo "a가 b보다 작다."
+fi
+ 
+if [ ${a} -le ${b} ]; then
+    echo "a가 b보다 작거나 같다."
+fi
+ 
+# 한줄로 작성
+if [ ${num1} -lt ${num2} ]; then echo "yes"; fi
